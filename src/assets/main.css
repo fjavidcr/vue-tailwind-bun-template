@@ -1,5 +1,12 @@
 @import './base.css';
 
+/* This injects Tailwind's base styles and any base styles registered by plugins. */
+@tailwind base;
+/* This injects Tailwind's component classes and any component classes registered by plugins. */
+@tailwind components;
+/* This injects Tailwind's utility classes and any utility classes registered by plugins. */
+@tailwind utilities;
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -9,6 +16,9 @@
 
 a,
 .green {
+  @apply text-xl;
+  @apply font-mono;
+  @apply font-extrabold;
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
