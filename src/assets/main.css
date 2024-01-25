@@ -16,7 +16,6 @@
 
 a,
 .green {
-  @apply text-xl;
   @apply font-mono;
   @apply font-extrabold;
   text-decoration: none;
